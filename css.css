@@ -1,153 +1,264 @@
 body {
+    /* Застосування анімації градієнтного фону */
     animation: gradient 5s ease-in-out infinite;
+    /* Встановлення градієнтного фону з плавним переходом кольорів */
     background: linear-gradient(90deg, red, yellow, green, blue, indigo, violet);
+    /* Розмір фону для анімації */
     background-size: 200% 200%;
 }
+
 @keyframes gradient {
+    /* Початкова позиція фону */
     0% { background-position: 0% 50%; }
+    /* Позиція фону на половині анімації */
     50% { background-position: 100% 50%; }
+    /* Кінцева позиція фону */
     100% { background-position: 0% 50%; }
 }
+
 header {
+    /* Фонова колірна голови */
     background-color: #66bb6a;
+    /* Колір тексту */
     color: #fff;
+    /* Внутрішні відступи */
     padding: 20px;
+    /* Вирівнювання тексту по центру */
     text-align: center;
 }
+
 nav {
+    /* Фонова колірна навігаційного меню */
     background-color: #fff;
+    /* Нижня границя навігаційного меню */
     border-bottom: 1px solid #ddd;
+    /* Внутрішні відступи */
     padding: 10px 20px;
+    /* Вирівнювання тексту по центру */
     text-align: center;
 }
+
 nav ul {
+    /* Видалення стилів списку */
     list-style-type: none;
+    /* Внутрішні відступи */
     padding: 0;
+    /* Зовнішні відступи */
     margin: 0;
 }
+
 nav ul li {
+    /* Відображення елементів списку в рядок */
     display: inline;
+    /* Зовнішній відступ праворуч */
     margin-right: 20px;
 }
+
 nav ul li:last-child {
+    /* Видалення зовнішнього відступу для останнього елемента списку */
     margin-right: 0;
 }
+
 nav ul li a {
+    /* Видалення підкреслення з посилань */
     text-decoration: none;
+    /* Колір тексту посилання */
     color: #333;
+    /* Жирність шрифту */
     font-weight: bold;
+    /* Плавний перехід кольору тексту */
     transition: color 0.3s ease;
 }
+
 nav ul li a:hover {
+    /* Зміна кольору тексту при наведенні */
     color: #66bb6a;
 }
+
 main {
+    /* Фонова колірна основного контенту */
     background-color: #fafafa;
+    /* Внутрішні відступи */
     padding: 20px;
+    /* Зовнішні відступи */
     margin: 10px;
+    /* Границя основного контенту */
     border: 1px solid #ddd;
+    /* Розтягування основного контенту */
     flex: 1;
 }
+
 section {
+    /* Зовнішній відступ знизу */
     margin-bottom: 20px;
 }
+
 section img {
+    /* Максимальна ширина зображень */
     max-width: 100%;
+    /* Автоматичне налаштування висоти */
     height: auto;
-    display: inline; 
+    /* Відображення в рядку */
+    display: inline;
 }
+
 section h2 {
+    /* Вирівнювання заголовка по центру */
     text-align: center;
+    /* Зовнішній відступ знизу */
     margin-bottom: 10px;
 }
+
 section p, section ul {
+    /* Вирівнювання тексту по ширині */
     text-align: justify;
+    /* Висота рядка */
     line-height: 1.6;
 }
+
 footer {
+    /* Фонова колірна підвалу */
     background-color: #66bb6a;
+    /* Колір тексту */
     color: #fff;
+    /* Внутрішні відступи */
     padding: 10px;
+    /* Вирівнювання тексту по центру */
     text-align: center;
 }
 
 .contact-info {
+    /* Зовнішній відступ зверху */
     margin-top: 10px;
+    /* Вирівнювання елементів по центру */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contact-info p {
+    /* Видалення зовнішнього відступу */
     margin: 0;
+    /* Зовнішній відступ праворуч */
     margin-right: 10px;
 }
+
 .google-map {
+    /* Ширина карти Google */
     width: 100%;
+    /* Висота карти Google */
     height: 300px;
+    /* Зовнішній відступ зверху */
     margin-top: 20px;
 }
+
 @media (max-width: 768px) {
     nav ul li {
+        /* Відображення елементів списку блоком на маленьких екранах */
         display: block;
+        /* Зовнішній відступ знизу */
         margin-bottom: 10px;
     }
 }
+
 #feedback {
+    /* Зовнішній відступ знизу */
     margin-bottom: 20px;
 }
+
 #feedback form {
+    /* Вертикальне розташування елементів форми */
     display: flex;
     flex-direction: column;
 }
 
 #feedback input, #feedback textarea {
+    /* Зовнішній відступ знизу */
     margin-bottom: 10px;
+    /* Внутрішні відступи */
     padding: 10px;
+    /* Границя елементів форми */
     border: 1px solid #ddd;
+    /* Радіус границі */
     border-radius: 4px;
 }
+
 #feedback button {
+    /* Внутрішні відступи */
     padding: 10px;
+    /* Колір тексту */
     color: #fff;
+    /* Фонова колірна кнопки */
     background-color: #66bb6a;
+    /* Відсутність границі */
     border: none;
+    /* Радіус границі */
     border-radius: 4px;
+    /* Вказівник миші при наведенні */
     cursor: pointer;
 }
+
 #feedback button:hover {
+    /* Зміна фону кнопки при наведенні */
     background-color: #4e9a51;
 }
+
 a {
+    /* Видалення підкреслення з посилань */
     text-decoration: none;
+    /* Колір посилань */
     color: #66bb6a;
 }
+
 a:hover {
+    /* Підкреслення посилання при наведенні */
     text-decoration: underline;
 }
+
 .button {
+    /* Відображення кнопки як блоку */
     display: inline-block;
+    /* Внутрішні відступи */
     padding: 10px 20px;
+    /* Колір тексту */
     color: #fff;
+    /* Фонова колірна кнопки */
     background-color: #0099ff;
+    /* Радіус границі */
     border-radius: 4px;
+    /* Вирівнювання тексту по центру */
     text-align: center;
+    /* Плавний перехід фону */
     transition: background-color 0.5s ease;
+    /* Анімація пульсації */
     animation: pulse 2s infinite;
 }
+
 @keyframes pulse {
+    /* Початкова колірна фону */
     0% { background-color: #0099ff; }
+    /* Зміна кольору фону на половині анімації */
     50% { background-color: #00c3ff; }
+    /* Кінцева колірна фону */
     100% { background-color: #0099ff; }
 }
+
 .text {
+    /* Анімація плавного переміщення тексту */
     animation: float 2s ease-in-out infinite;
+    /* Вирівнювання тексту по центру */
     text-align: center;
+    /* Розмір шрифту */
     font-size: 24px;
 }
+
 @keyframes float {
+    /* Початкова позиція тексту */
     0% { transform: translateY(0px); }
+    /* Підйом тексту на половині анімації */
     50% { transform: translateY(-10px); }
+    /* Кінцева позиція тексту */
     100% { transform: translateY(0px); }
 }
+
 
